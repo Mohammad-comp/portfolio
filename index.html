@@ -1,11 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Add your HTML content here -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammad | Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio website for a web development student showcasing education, skills, projects, and experience."
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="logo">M</div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="eyebrow">Software Engineer</p>
+            <h1>Hello, I’m Mohammad</h1>
+            <p class="intro">
+              I am a Computer Science student and aspiring software engineer with
+              experience in full-stack development, cloud tools, and data-driven
+              problem solving.
+            </p>
+
+            <div class="hero-buttons">
+              <a class="button primary" href="#projects"><i class="fa-solid fa-folder-open"></i> View Projects</a>
+              <a class="button secondary" href="#contact"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+              <a class="button secondary" href="Resume.pdf" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-lines"></i> Resume</a>
+            </div>
+
+            <ul class="quick-facts">
+              <li><i class="fa-brands fa-python"></i></li>
+              <li><i class="fa-brands fa-java"></i></li>
+              <li><i class="fa-brands fa-square-js"></i></li>
+              <li><i class="fa-brands fa-html5"></i></li>
+              <li><i class="fa-brands fa-css3-alt"></i></li>
+              <li><i class="fa-brands fa-react"></i></li>
+              <li><i class="fa-brands fa-node-js"></i></li>
+            </ul>
+          </div>
+
+          <div class="hero-image-wrap">
+            <img
+              src="img/IMG_6672.jpeg"
+              alt="Mohammad wearing a graduation gown and cap"
+              class="profile-photo"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label">About Me</p>
+            <h2>Student developer with a passion for design and learning.</h2>
+          </div>
+
+          <div class="about-box">
+            <p>
+              I am a Computer Science student at Adelphi University with a minor in
+              Cybersecurity, focused on software engineering, web development, and
+              building practical tools that solve real-world problems.
+            </p>
+            <p>
+              My experience includes full-stack development, API design, Google
+              Calendar integrations, cloud services, and geospatial data analysis.
+              I enjoy creating efficient, user-friendly applications and working in
+              collaborative Agile environments.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section alt-bg">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label">Skills</p>
+            <h2>Tools and strengths I’m building.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h3>Languages</h3>
+              <p>Python, Java, C/C++, JavaScript, TypeScript, HTML, CSS, R</p>
+            </div>
+
+            <div class="skill-card">
+              <h3>Frameworks & Tools</h3>
+              <p>React, Node.js, Express, Git, GitHub</p>
+            </div>
+
+            <div class="skill-card">
+              <h3>APIs & Cloud</h3>
+              <p>REST APIs, OAuth 2.0, Google Calendar API, AWS EC2, S3, Lambda</p>
+            </div>
+
+            <div class="skill-card">
+              <h3>Concepts</h3>
+              <p>Data Structures, Agile Workflow, Full-Stack Development, Geospatial Analysis with ESRI</p>
+            </div>
+
+            <div class="skill-card">
+              <h3>Design & Content</h3>
+              <p>Squarespace, Canva, CapCut</p>
+            </div>
+
+            <div class="skill-card">
+              <h3>Productivity Tools</h3>
+              <p>Microsoft Office, Google Workspace, Windows & Mac environments</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label">Education</p>
+            <h2>Academic background.</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="year">May 2028</span>
+              <div>
+                <h3>Adelphi University</h3>
+                <p>B.S. in Computer Science, Software Engineering</p>
+                <p>Minor in Cybersecurity</p>
+                <p>Relevant coursework: Web Development, Introduction to Digital Art, Photoshop, Illustrator</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section alt-bg">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label">Experience</p>
+            <h2>Work and leadership experience.</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="year">June 2025 - Present</span>
+              <div>
+                <h3>Intern, Computer Science SaaS, SEO, AI</h3>
+                <p>Sports Media Inc</p>
+                <ul class="resume-list">
+                  <li>Engineered a robust appointment booking backend using Node.js and Express, integrating the Google Calendar API to automate scheduling and reduce manual data entry.</li>
+                  <li>Implemented secure OAuth 2.0 authentication with automated token refreshing to maintain persistent and safe user sessions.</li>
+                  <li>Designed and documented scalable RESTful API endpoints for CRUD operations, optimizing data retrieval speeds for calendar events.</li>
+                  <li>Developed type-safe frontend components in React + TypeScript to visualize calendar events and improve user interface quality.</li>
+                  <li>Collaborated in an Agile workflow using Git/GitHub for version control, branch management, and code reviews.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <span class="year">Sep 2025 - Present</span>
+              <div>
+                <h3>Tech Team Member</h3>
+                <p>MIST Muslim Interscholastic Tournament NY</p>
+                <ul class="resume-list">
+                  <li>Managed software and hardware systems including registration platforms, Squarespace website operations, announcements, and scoring tools.</li>
+                  <li>Resolved technical and A/V issues during tournament operations to ensure smooth event execution.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="section-label">Projects</p>
+            <h2>Representative work.</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <span class="tag">Python / GeoPandas</span>
+              <h3>Spatial Justice in Transportation Analysis</h3>
+              <p>
+                Analyzed transportation equity in Nassau and Kings counties by
+                processing U.S. Census API data to identify accessibility gaps.
+              </p>
+              <p>
+                Visualized results with interactive choropleth maps and statistical
+                models using Plotly and Folium.
+              </p>
+              <a class="project-link" href="https://github.com/Mohammad-comp/transportation-analysis" target="_blank" rel="noreferrer">
+                View project on GitHub
+              </a>
+            </article>
+
+            <article class="project-card">
+              <span class="tag">Full-Stack</span>
+              <h3>Appointment Booking System</h3>
+              <p>
+                Built backend APIs with Node.js and Express and connected them to
+                the Google Calendar API for event scheduling and automation.
+              </p>
+            </article>
+
+            <article class="project-card">
+              <span class="tag">Web</span>
+              <h3>Personal Portfolio Website</h3>
+              <p>
+                Designed and developed a responsive portfolio site to present my
+                work, skills, education, and project experience.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-box">
+          <div>
+            <p class="section-label">Contact</p>
+            <h2>Let’s connect.</h2>
+          </div>
+
+          <div class="contact-links">
+            <a href="mailto:mabdullah.2118@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+19175177739" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://github.com/Mohammad-comp" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <i class="fa-brands fa-square-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mohammad-abdullah-63a87b225" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Mohammad</p>
+      </div>
+    </footer>
+  </body>
 </html>

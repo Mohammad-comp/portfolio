@@ -1,1 +1,374 @@
-/* Add you CSS here */
+/*
+  Beginner-friendly CSS.
+  This page uses simple sections, colors, and spacing to create a modern layout.
+  You can edit the values below to change the look of your website.
+*/
+
+:root {
+  --bg-color: #0f172a;
+  --panel-color: #111827;
+  --primary-color: #7dd3fc;
+  --accent-color: #60a5fa;
+  --text-color: #e5e7eb;
+  --muted-color: #cbd5e1;
+  --border-color: #1f2937;
+  --shadow: 0 12px 30px rgba(15, 23, 42, 0.5);
+  --section-alt: #111c2d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.alt-bg {
+  background: var(--section-alt);
+}
+
+.section-heading {
+  margin-bottom: 30px;
+}
+
+.section-label,
+.eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.3rem);
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+
+h2 {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  margin-bottom: 0;
+}
+
+.site-header {
+  background: rgba(15, 23, 42, 0.9);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 72px;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  background: var(--primary-color);
+  color: #0f172a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.main-nav {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  color: var(--muted-color);
+  font-weight: 600;
+}
+
+.main-nav a:hover {
+  color: var(--primary-color);
+}
+
+.hero {
+  padding: 70px 0 60px;
+  background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.hero-text,
+.hero-image-wrap {
+  flex: 1;
+}
+
+.intro {
+  font-size: 1.1rem;
+  color: var(--muted-color);
+  max-width: 620px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  margin: 28px 0 30px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-weight: bold;
+  transition: 0.2s ease;
+  font-size: 1.05rem;
+}
+
+.button.primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.button.secondary {
+  background: #0b1220;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.quick-facts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+.quick-facts li {
+  background: transparent;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  color: var(--primary-color);
+  font-size: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.quick-facts li:hover {
+  color: #dbeafe;
+  transform: translateY(-2px);
+}
+
+.hero-image-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 75%;
+  height: auto;
+  border-radius: 26px;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+  border: 6px solid #0b1220;
+}
+
+.about-box,
+.project-card,
+.skill-card,
+.timeline-item,
+.contact-box {
+  background: var(--panel-color);
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.about-box {
+  padding: 30px;
+}
+
+.about-box p {
+  color: var(--muted-color);
+  margin-bottom: 0;
+}
+
+.about-box p + p {
+  margin-top: 18px;
+}
+
+.skills-grid,
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.skill-card,
+.project-card {
+  padding: 24px;
+}
+
+.skill-card h3,
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+.skill-card p,
+.project-card p {
+  color: var(--muted-color);
+  margin-bottom: 0;
+}
+
+.tag {
+  display: inline-block;
+  background: #1e293b;
+  color: var(--primary-color);
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timeline-item {
+  padding: 24px 26px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.year {
+  min-width: 120px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.timeline-item p {
+  color: var(--muted-color);
+  margin-bottom: 0;
+}
+
+.contact-section {
+  padding-bottom: 80px;
+}
+
+.contact-box {
+  padding: 30px 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-links {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact-links a {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 2.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contact-links a:hover {
+  color: #dbeafe;
+  transform: translateY(-2px);
+}
+
+.site-footer {
+  background: var(--primary-color);
+  color: white;
+  padding: 18px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .hero-inner,
+  .contact-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skills-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-nav {
+    gap: 12px;
+    font-size: 0.9rem;
+  }
+}
