@@ -274,6 +274,55 @@ h2 {
   margin-bottom: 0;
 }
 
+.project-details {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 18px 0;
+  padding: 14px 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.project-details div {
+  min-width: 120px;
+}
+
+.project-details dt {
+  color: var(--accent-color);
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-details dd {
+  margin: 2px 0 0;
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+.project-list {
+  padding-left: 18px;
+  color: var(--muted-color);
+  font-size: 0.95rem;
+}
+
+.project-list li + li {
+  margin-top: 8px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 18px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.project-link:hover {
+  color: #dbeafe;
+}
+
 .tag {
   display: inline-block;
   background: #1e293b;
